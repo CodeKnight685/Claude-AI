@@ -11,7 +11,7 @@ const nextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: "frame-ancestors https://*.zoho.com https://*.zoho.com",
+            value: "frame-ancestors 'self' https://*.zoho.com https://*.zohocdn.com",
           },
         ],
       },
@@ -20,3 +20,14 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
+```
+
+3. Click **Commit changes**
+
+---
+
+## Also Update `lib/zoho-crm.js`
+
+Since your region is `com`, make sure your `.env` in Vercel has:
+```
+ZOHO_REGION=com
