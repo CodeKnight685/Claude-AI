@@ -1,3 +1,4 @@
+/** @type {import('next').NextConfig} */
 const nextConfig = {
   async headers() {
     return [
@@ -5,12 +6,12 @@ const nextConfig = {
         source: "/(.*)",
         headers: [
           {
-            key: "Content-Security-Policy",
-            value: "frame-ancestors 'self' https://*.zoho.in https://*.zoho.com https://*.zohocdn.com",
-          },
-          {
             key: "X-Frame-Options",
             value: "ALLOWALL",
+          },
+          {
+            key: "Content-Security-Policy",
+            value: "frame-ancestors https://*.zoho.in https://*.zoho.com",
           },
         ],
       },
