@@ -20,14 +20,3 @@ const nextConfig = {
 };
 
 module.exports = nextConfig;
-```
-
-3. Click **Commit changes**
-
----
-
-## Also Update `lib/zoho-crm.js`
-
-Since your region is `com`, make sure your `.env` in Vercel has:
-```
-ZOHO_REGION=com
