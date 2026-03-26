@@ -11,7 +11,7 @@ const nextConfig = {
           },
           {
             key: "Content-Security-Policy",
-            value: "frame-ancestors https://*.zoho.in https://*.zoho.com",
+            value: "frame-ancestors https://*.zoho.com https://*.zoho.com",
           },
         ],
       },
