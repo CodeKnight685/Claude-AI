@@ -1,16 +1,16 @@
 {
-  "name": "zoho-crm-mcp",
+  "name": "zoho-crm-support-agent",
   "version": "1.0.0",
-  "description": "MCP server for Zoho CRM CRUD operations",
-  "type": "module",
-  "main": "src/index.js",
+  "private": true,
   "scripts": {
-    "start": "node src/index.js",
-    "dev": "node --watch src/index.js"
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
   },
   "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.0.0",
-    "axios": "^1.7.0",
-    "dotenv": "^16.4.0"
+    "@anthropic-ai/sdk": "^0.36.0",
+    "next": "^14.2.0",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
   }
 }
